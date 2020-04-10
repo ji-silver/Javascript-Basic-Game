@@ -1,8 +1,8 @@
 var 이미지좌표 = '0';
 var 가위바위보 = {
     바위: '0',
-    가위: '-142px',
-    보: '-284px'
+    가위: '-260px',
+    보: '-538px'
 };
 console.log(Object.entries(가위바위보)); //객체를 베열모양으로 바꿔줌
 function 컴퓨터의선택(이미지좌표) {
@@ -22,7 +22,7 @@ function 인터벌메이커() {
         } else {
             이미지좌표 = 가위바위보.바위;
         }
-        document.querySelector('#computer').style.background = 'url(https://en.pimg.jp/023/182/267/1/23182267.jpg)' + 이미지좌표 +' 0';
+        document.querySelector('#computer').style.background = 'url(https://data.ac-illust.com/data/thumbnails/4f/4f63b32d7d43ea2cb231c0724200cf8e_t.jpeg)' + 이미지좌표 +' 0';
     }, 100);
 }
 
@@ -46,12 +46,13 @@ document.querySelectorAll('.btn').forEach(function(btn){
         var 점수차 = 나의점수 - 컴퓨터점수;
         
         if (점수차 === 0) {
+            document.querySelector('#result').textContent='비겼습니다';
             console.log('비겼습니다.');
         } else if ([-1, 2].includes(점수차)) {
             // ||<- 또는 관계일 때 includes를 사용해 배열로 줄일 수 있음
-            console.log('이겼습니다!');
+            document.querySelector('#result').textContent='이겼습니다!';
         } else {
-            console.log('졌습니다ㅜ');
+            document.querySelector('#result').textContent='졌습니다ㅠㅠ';
         }
     });
 });
