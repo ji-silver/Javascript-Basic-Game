@@ -9,4 +9,5 @@
   <li><a href="https://ji-silver.github.io/Javascript-Basic-Game/6.지뢰찾기">지뢰찾기</a></li>
   <li><a href="https://ji-silver.github.io/Javascript-Basic-Game/7.반응속도테스트/반응속도.html">반응속도 테스트</a></li>
   <li><a href="https://ji-silver.github.io/Javascript-Basic-Game/8.짝맞추기/짝맞추기.html">짝맞추기</a></li>
+  <li><a href="https://ji-silver.github.io/Javascript-Basic-Game/9.자스스톤/자스스톤.html">자스스톤</a></li>
 </ol>
